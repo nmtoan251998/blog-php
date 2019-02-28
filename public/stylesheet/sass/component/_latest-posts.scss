@@ -1,23 +1,17 @@
-.latest-posts {
-    .latest-post {
-        text-transform: capitalize;
-        width: 100%;        
-        padding: 1.6rem;
-        padding-left: 2rem;         
-        border-bottom: 2px solid $color-primary;
-        transition: .5s background;        
+.latest-post {
+    text-transform: capitalize;
+    width: 100%;        
+    padding: 1.6rem;
+    padding-left: 2rem;         
+    border-bottom: 2px solid $color-primary;
+    transition: .5s background;        
+
+    &:hover {
+        filter: brightness(85%);
+    }            
     
-        &:hover {
-            background-color: $color-primary;
-        }
-    
-        &:hover &-item{
-            color: $color-light;
-        }
-        
-        &-item {            
-            font-size: $font-size-l;
-            color: $color-primary-2;
-        }
+    &-item {            
+        font-size: $font-size-l;
+        color: $color-primary-2;
     }
 }
