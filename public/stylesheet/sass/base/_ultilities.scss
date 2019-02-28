@@ -1,0 +1,17 @@
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.u-center-text {text-align: center !important;}
+
+.u-mb-s {margin-bottom: 2.5rem !important;}
+.u-mb-m {margin-bottom: 5rem !important;}
+.u-mb-l {margin-bottom: 7.5rem !important;}
+.u-mb-xl {margin-bottom: 10rem !important;}
+
+.u-mt-s {margin-top: 2.5rem !important;}
+.u-mt-m {margin-top: 5rem !important;}
+.u-mt-l {margin-top: 7.5rem !important;}
+.u-mt-xl {margin-top: 10rem !important;}

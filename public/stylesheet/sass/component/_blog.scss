@@ -1,0 +1,64 @@
+.blog {    
+
+    &__title {
+        &:hover {
+            filter: brightness(125%);
+        }
+    }
+
+    &__read-more {
+        color: $color-link;        
+    }
+
+    &__info {
+        margin-top: 1rem;        
+    }    
+
+    &__author {
+        display: inline-block;        
+        
+        color: $color-primary-1;                              
+
+        &::before {
+            content: "Posted by: ";
+            font-weight: 400;
+            color: $color-dark-1;
+            cursor: text;
+        }
+    }
+
+    &__date {
+        font-family: Copse;
+        font-weight: bold;
+        // font-style: italic;
+        color: $color-text;
+
+        &::before {
+            content: "on ";
+            font-weight: 400;
+            color: $color-dark-1;
+            cursor: text;
+            font-style: normal;
+        }
+    }
+
+    &__category {         
+        margin-top: .5rem;       
+        font-size: $font-size-s;
+
+        &-text {
+            color: $color-text;
+        }
+        
+        &-content {
+            padding: .2rem .4rem;
+            color: $color-primary;
+            background-color: $color-light;
+            border-radius: 5px;
+
+            &:hover {
+                opacity: .7;
+            }
+        }
+    }
+}

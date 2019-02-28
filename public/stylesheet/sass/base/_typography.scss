@@ -1,0 +1,31 @@
+.heading-1 {
+    @extend %heading;
+
+    font-family: Cambria;
+    font-size: $font-size-xxxxl;    
+}
+
+.heading-2 {
+    @extend %heading;
+
+    font-family: Cambria;
+    font-size: $font-size-xxxl;    
+        
+    &-primary {color: $color-primary-1;}
+}
+
+.heading-3 {
+    @extend %heading;
+
+    font-family: Cambria;
+    font-size: $font-size-xxxl;    
+    color: $color-primary-1;    
+}
+
+.heading-4 {
+    @extend %heading;
+
+    font-family: Cambria;
+    font-size: $font-size-xxxl;    
+    color: $color-primary-1;    
+}
