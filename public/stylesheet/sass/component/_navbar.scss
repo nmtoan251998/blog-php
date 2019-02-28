@@ -1,0 +1,33 @@
+.nav {            
+    width: 100%;
+    background-color: $color-dark;                
+
+    &--menu {
+        margin: 0;
+        list-style-type: none;
+        padding-left: 5rem;
+        padding-right: 10rem;
+    }
+
+    &--list {
+        margin: 0;
+        padding: 0;
+        display: inline-block;
+    }
+
+    &--item {        
+        display: block;
+        color: $color-light;        
+        margin: 0;
+        padding: 1.2rem 1.6rem;        
+        transition: .35s border;
+        border-top: 5px dotted transparent;
+        border-bottom: 5px dotted transparent;        
+
+        &:hover {
+            border-top: 5px dotted $color-primary;
+            border-bottom: 5px dotted $color-primary;            
+        }
+    }
+
+}

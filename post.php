@@ -12,6 +12,10 @@
 </head>
 <body>
     <div class="container">
+        <!-- [navbar]-->
+
+        <!-- [end navbar]-->
+
         <!-- [main]-->
         <main class="main">
             <!-- [Blog]-->
@@ -51,16 +55,16 @@
                     } // [end if block 2]
 
                 } // [end if block 1]
-                else { 
-            ?> 
-                <script>window.location = "home.php" </script>        
-            <?php
+                else {             
                 } 
             ?>
             <!-- end [Blog] -->            
         </main>
         <!-- end [main] -->  
+        
+        <!-- [sidebar]-->
         <?php include "includes/sidebar.php" ?>                          
+        <!-- [end sidebar]-->
     </div>    
 </body>
 </html>

@@ -188,12 +188,19 @@ body {
   color: #dddddd;
   margin: 0;
   padding: 1.2rem 1.6rem;
+  transition: 0.35s border;
+  border-top: 5px dotted transparent;
+  border-bottom: 5px dotted transparent;
+}
+.nav--item:hover {
+  border-top: 5px dotted #973d29;
+  border-bottom: 5px dotted #973d29;
 }
 
 .main {
   width: 65%;
-  margin-top: 5rem;
-  top: 20rem;
+  margin-top: 4rem;
+  top: 18rem;
   margin-right: 2rem;
   padding: 5rem;
   padding-left: 6.5rem;
@@ -202,8 +209,8 @@ body {
 .right-sidebar {
   position: absolute;
   right: 5rem;
-  margin-top: 5rem;
-  top: 20rem;
+  margin-top: 4rem;
+  top: 18rem;
   width: 30%;
 }
 

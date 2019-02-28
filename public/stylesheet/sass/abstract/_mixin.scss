@@ -1,3 +1,9 @@
+// TOP-CONTENT-SPACE
+@mixin spacing-top() {
+    margin-top: $margin-for-homepage;
+    top: 4.5*$margin-for-homepage;
+}
+
 // BREAKPOINTS
 @mixin breakpoint($point) {
     @if $point == small-mobile {
