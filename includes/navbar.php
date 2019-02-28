@@ -29,7 +29,7 @@
                         <a href="#" class="dropdown--item">Category 3</a>
                     </li>
                     <li class="dropdown--list">
-                        <a href="#" class="dropdown--item">Category 4</a>
+                        <a href="#" class="dropdown--item">More </a>
                     </li>
                 </ul>
             </li>                
