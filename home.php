@@ -1,4 +1,4 @@
-<?php include "config.php" ?>
+<?php include "includes/config.php" ?>
 
 <!DOCTYPE html>
 <html lang="vi">
@@ -14,7 +14,7 @@
             <!-- [Blog]-->
             <?php
                 $sql = "SELECT * FROM blog_data ORDER BY blog_id DESC LIMIT 3";
-                $result = mysqli_query($conn, $sql);
+                $result = mysqli_query($connection, $sql);
                 
                 // if data exist in database
                 if ($result->num_rows > 0) {
@@ -57,7 +57,7 @@
             <hr/>
             <?php
                 $sql = "SELECT * FROM blog_data ORDER BY blog_id DESC LIMIT 5";
-                $result = mysqli_query($conn, $sql);                
+                $result = mysqli_query($connection, $sql);                
 
                 // if data exist in database
                 if($result->num_rows > 0) {
