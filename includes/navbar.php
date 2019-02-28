@@ -37,7 +37,7 @@
                             }                    
                         ?>
                         <li class="dropdown--list">
-                            <a href="#" class="dropdown--item">More </a>
+                            <a href="categories.php" class="dropdown--item">More </a>
                         </li>
                     </ul>
                 </li>

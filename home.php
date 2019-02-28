@@ -38,22 +38,36 @@
                         $blogDate = $row["blog_date"];
                         $blogCategory = $row["blog_category"];
                         
-                        echo '
+                        $catSql = "SELECT * FROM categories WHERE cat_id = '$blogCategory'";                        
+                        $catResult = mysqli_query($connection, $catSql);
+                        
+                        // if data exist in database
+                        if($catResult->num_rows > 0) {
+                            while($catRow = $catResult->fetch_assoc()) {
+                                $catData = ucwords($catRow["cat_data"]);
+                            }
+                        }
+            ?>          
+                        
                             <section class="blog">
-                                <h2><a href="post.php?blog_id='.$blogId.'" class="heading-2 heading-2-primary blog__title">'.$blogTitle.'</a></h2>
-                                <div class="blog__info">                            
-                                    <a href="#" title="'.$blogAuthor.'" class="blog__author">'.$blogAuthor.'</a>,
-                                    <span class="blog__date">'.$blogDate.'</span>                                                 
-                                </div>                        
-                                <p class="blog__content">'.$blogContent.' ...........<a href="post.php?blog_id='.$blogId.'" class="blog__read-more">Read more</a> </p>                                                        
-                                <div class="blog__category">
-                                    <span class="blog__category-text">Tag: </span>  
-                                    <a href="#" class="blog__category-content">'.$blogCategory.'</a>
-                                </div>               
-                            </section>
-                            <hr />
-                            <br/>
-                            ';                    
+                            <?php 
+                                echo '
+                                    <h2><a href="post.php?blog_id='.$blogId.'" class="heading-2 heading-2-primary blog__title">'.$blogTitle.'</a></h2>
+                                    <div class="blog__info">                            
+                                        <a href="#" title="'.$blogAuthor.'" class="blog__author">'.$blogAuthor.'</a>,
+                                        <span class="blog__date">'.$blogDate.'</span>                                                 
+                                    </div>                        
+                                    <p class="blog__content">'.$blogContent.' ...........<a href="post.php?blog_id='.$blogId.'" class="blog__read-more">Read more</a> </p>                                                        
+                                    <div class="blog__category">
+                                        <span class="blog__category-text">Tag: </span>  
+                                        <a href="#" class="blog__category-content">'.$catData.'</a>
+                                    </div>               
+                                </section>
+                                <hr />
+                                <br/>
+                                ';       
+                            ?>  
+            <?php           
                     }                
                 }
                 else { 
