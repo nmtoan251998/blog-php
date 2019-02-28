@@ -150,13 +150,23 @@ body {
   transition: 0.5s background;
 }
 .latest-post:hover {
-  filter: brightness(85%);
+  background-color: #973d29;
+}
+.latest-post:hover .latest-post-item {
+  color: #dddddd;
 }
 .latest-post-item {
   font-size: 2rem;
   color: #9c3814;
 }
 
+.nav {
+  height: 5rem;
+  width: 100%;
+  background-color: #8b3719;
+  position: fixed;
+  top: 0;
+}
 .main {
   width: 65%;
   margin-top: 10rem;

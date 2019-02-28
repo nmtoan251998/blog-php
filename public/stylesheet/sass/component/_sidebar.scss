@@ -7,8 +7,12 @@
     transition: .5s background;        
 
     &:hover {
-        filter: brightness(85%);
-    }            
+        background-color: $color-primary;
+    }  
+    
+    &:hover &-item{
+        color: $color-light;
+    }   
     
     &-item {            
         font-size: $font-size-l;
