@@ -1,16 +1,17 @@
 .main {
     width: 65%;
-    margin-top: 10rem;
+    // margin-top: 5rem;
+    @include margin-top(5rem);
     margin-right: 2rem;
     padding: 5rem;
     padding-left: 6.5rem;    
 }
 
 .right-sidebar {
-    position: fixed;
+    position: absolute;
     right: 5rem;
-    top: 0;
+    // top:; property
+    @include margin-top(5rem);
 
-    width: 30%;
-    margin-top: 18rem;            
+    width: 30%;             
 }
