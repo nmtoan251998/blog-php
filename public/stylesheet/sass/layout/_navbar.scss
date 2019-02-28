@@ -18,8 +18,8 @@
     &--item {        
         display: block;
         color: $color-light;        
-        margin: 0;
-        padding: 1.2rem 1.6rem;        
+        margin: 0;        
+        @extend %button-link-s; // padding property
         transition: .35s border;
         border-top: 5px dotted transparent;
         border-bottom: 5px dotted transparent;        

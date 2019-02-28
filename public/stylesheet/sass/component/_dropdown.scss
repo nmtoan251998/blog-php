@@ -1,0 +1,43 @@
+.dropdown {        
+    position: relative;
+
+    &:hover &--menu{                
+        opacity: 1;
+        visibility: visible;         
+    }
+
+    &--menu {        
+        list-style-type: none;
+        position: absolute;        
+        left: 0;
+        transform: translateX(-18%);                
+        transition: .5s; 
+        display: block;
+        opacity: 0;
+        visibility: hidden;        
+    }
+
+    &--list {        
+        display: block;                   
+    }
+
+    &--item {
+        display: block;
+        width: 20rem;
+        margin: 0;   
+        @extend %button-link-m; // padding property
+        color: $color-light;
+        background-color: lightcoral;                                    
+        border-bottom: 2px solid transparent;
+        transition: .35s;
+
+        &:hover {
+            border-bottom: 2px solid $color-light;
+        }
+        &:hover::after {
+            content: ">";
+            transition: .55s;
+            padding-left: 8px;
+        }
+    }   
+}

@@ -13,26 +13,11 @@
 <body>
     <div class="container">        
         <!-- [navbar]-->
-        <nav class="nav">
-            <ul class="nav--menu">                
-                <li class="nav--list">
-                    <a href="#" class="nav--item">Category 1</a>
-                </li>
-                <li class="nav--list">
-                    <a href="#" class="nav--item">Category 2</a>
-                </li>
-                <li class="nav--list">
-                    <a href="#" class="nav--item">Category 3</a>
-                </li>
-                <li class="nav--list">
-                    <a href="#" class="nav--item">Category 4</a>
-                </li>                
-            </ul>
-        </nav>
-        <!-- [end navbar]-->
+        <?php include "includes/navbar.php" ?>                          
+        <!-- [end navbar]-->       
 
         <div class="u-mt-s u-center-text">
-            <h1 class="heading-1 heading-1--primary">My Passionate Blog</h1>
+            <h1 class="heading-1 heading-primary">My Passionate Blog</h1>
         </div>
 
         <!-- [main]-->

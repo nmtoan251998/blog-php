@@ -7,7 +7,9 @@
 @import "abstract/mixin";
 
 @import "component/blog";
-@import "component/sidebar";
-@import "component/navbar";
+@import "component/dropdown";
+
+@import "layout/sidebar";
+@import "layout/navbar";
 
 @import "pages/home";
