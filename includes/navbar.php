@@ -8,7 +8,7 @@
      <nav class="nav">
         <ul class="nav--menu">                
             <li class="nav--list">
-                <a href="#" class="nav--item">Home</a>
+                <a href="home.php" class="nav--item">Home</a>
             </li>
             <li class="nav--list">
                 <a href="#" class="nav--item">Item 2</a>

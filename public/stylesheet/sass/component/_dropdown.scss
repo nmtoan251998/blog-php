@@ -23,7 +23,7 @@
 
     &--item {
         display: block;
-        width: 18rem;
+        width: 25rem;
         margin: 0;   
         @extend %button-link-m; // padding property
         color: $color-light;

@@ -13,8 +13,8 @@
 <body>
     <div class="container">
         <!-- [navbar]-->
-
-        <!-- [end navbar]-->
+        <?php include "includes/navbar.php" ?>                          
+        <!-- [end navbar]-->  
 
         <!-- [main]-->
         <main class="main">
