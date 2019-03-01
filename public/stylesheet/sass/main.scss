@@ -1,15 +1,20 @@
-@import "base/variable";
-@import "base/base";
-@import "base/typography";
-@import "base/ultilities";
+@import 
+    "base/variable",
+    "base/base",
+    "base/typography",
+    "base/ultilities";
 
-@import "abstract/extend";
-@import "abstract/mixin";
+@import 
+    "abstract/extend",
+    "abstract/mixin";
 
-@import "component/blog";
-@import "component/dropdown";
+@import 
+    "component/blog",
+    "component/dropdown";
 
-@import "layout/sidebar";
-@import "layout/navbar";
-
-@import "pages/home";
+@import 
+    "layout/sidebar",
+    "layout/navbar";
+    
+@import 
+    "pages/home";

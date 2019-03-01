@@ -17,7 +17,7 @@
                 <a href="#" class="nav--item">Item 3</a>
             </li>            
             <li class="nav--list dropdown">
-                <a class="nav--item">Category</a>
+                <a class="nav--item">Blog category</a>
                     <ul class="dropdown--menu">
                         <?php
                             $sql = "SELECT * FROM categories LIMIT 2";

@@ -22,7 +22,14 @@
             <?php           
                 if(isset($_GET["cat_id"])) {
                     $curCat = $_GET["cat_id"];
-                    
+                    $curCatData = ucwords($_GET["cat_data"]);
+
+                    echo '
+                        <div class="u-mb-m u-center-text">
+                            <h1 class="heading-1 heading-primary blog__title">Topic: '.$curCatData.'</h1>
+                        </div>
+                        ';
+
                     $sql = "SELECT * FROM blog_data WHERE blog_category = $curCat";        
                     $result = mysqli_query($connection, $sql);
                     
