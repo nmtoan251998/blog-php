@@ -28,10 +28,11 @@
                     
                     if($result->num_rows > 0) {
                         while($row = $result->fetch_assoc()) {  
-                            $blogTitle = $row['blog_title'];
+                            $blogId = $row['blog_id'];
+                            $blogTitle = ucwords($row["blog_title"]);
                             $blogAuthor = $row['blog_author'];
                             $blogDate = $row['blog_date'];
-                            $blogContent = $row['blog_description'];
+                            $blogContent = substr($row["blog_description"], 0, 1000);
                             
                             echo '
                                 <section class="blog">                                
@@ -40,7 +41,7 @@
                                         <a href="#" title="'.$blogAuthor.'" class="blog__author">'.$blogAuthor.'</a>,
                                         <span class="blog__date">'.$blogDate.'</span>                                        
                                     </div>                        
-                                    <p class="blog__content">'.$blogContent.'</p>                                                                                         
+                                    <p class="blog__content">'.$blogContent.' ...........<a href="post.php?blog_id='.$blogId.'" class="blog__read-more">Read more</a> </p>
                                 </section>                                
                             ';     
                            

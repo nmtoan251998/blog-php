@@ -55,7 +55,7 @@
                                         <a href="#" title="'.$blogAuthor.'" class="blog__author">'.$blogAuthor.'</a>,
                                         <span class="blog__date">'.$blogDate.'</span>                                                 
                                     </div>                        
-                                    <p class="blog__content">'.$blogContent.' ...........<a href="post.php?blog_id='.$blogId.'" class="blog__read-more">Read more</a> </p>                                                        
+                                    <p class="blog__content">'.$blogContent.' ...........<a href="post.php?blog_id='.$blogId.'" class="blog__read-more">Read more</a> </p>
                                     <div class="blog__category">
                                         <span class="blog__category-text">Tag: </span>  
                                         <a href="#" class="blog__category-content">'.$catData.'</a>
