@@ -38,7 +38,7 @@
                         $blogDate = $row["blog_date"];
                         $blogCategory = $row["blog_category"];
                         
-                        $catSql = "SELECT * FROM categories WHERE cat_id = '$blogCategory'";                        
+                        $catSql = "SELECT * FROM categories WHERE cat_id = '$blogCategory'";                                                
                         $catResult = mysqli_query($connection, $catSql);
                         
                         // if data exist in database

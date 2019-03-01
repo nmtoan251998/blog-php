@@ -16,11 +16,12 @@
                     while($row = $result->fetch_assoc()) {
                         
                         $blogTitle = ucwords($row["blog_title"]);
+                        $blogId = $row["blog_id"];
 
                         echo '                
                             <section class="latest-posts">
                                 <div class="latest-post">
-                                    <a class="latest-post-item" href="#">'.$blogTitle.'</a>                        
+                                    <a class="latest-post-item" href="post.php?blog_id='.$blogId.'">'.$blogTitle.'</a>                        
                                 </div>                               
                             </section>
                             ';
