@@ -46,12 +46,10 @@
                             while($catRow = $catResult->fetch_assoc()) {
                                 $catData = ucwords($catRow["cat_data"]);
                             }
-                        }
-            ?>          
-                        
-                            <section class="blog">
-                            <?php 
+                        }                                    
+                            
                                 echo '
+                                <section class="blog">                            
                                     <h2><a href="post.php?blog_id='.$blogId.'" class="heading-2 heading-2-primary blog__title">'.$blogTitle.'</a></h2>
                                     <div class="blog__info">                            
                                         <a href="#" title="'.$blogAuthor.'" class="blog__author">'.$blogAuthor.'</a>,
@@ -66,8 +64,6 @@
                                 <hr />
                                 <br/>
                                 ';       
-                            ?>  
-            <?php           
                     }                
                 }
                 else { 

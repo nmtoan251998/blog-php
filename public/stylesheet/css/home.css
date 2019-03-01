@@ -168,7 +168,7 @@ body {
   list-style-type: none;
   position: absolute;
   left: 0;
-  transform: translateX(-18%);
+  transform: translateX(-15%);
   transition: 0.5s;
   display: block;
   opacity: 0;
@@ -219,17 +219,20 @@ body {
   background-color: #000000;
 }
 .nav--menu {
+  cursor: pointer;
   margin: 0;
   list-style-type: none;
   padding-left: 5rem;
   padding-right: 10rem;
 }
 .nav--list {
+  cursor: pointer;
   margin: 0;
   padding: 0;
   display: inline-block;
 }
 .nav--item {
+  cursor: pointer;
   display: block;
   color: #dddddd;
   margin: 0;

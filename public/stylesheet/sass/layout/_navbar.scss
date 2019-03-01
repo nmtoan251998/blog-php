@@ -3,6 +3,7 @@
     background-color: $color-dark;                
 
     &--menu {
+        cursor: pointer;
         margin: 0;
         list-style-type: none;
         padding-left: 5rem;
@@ -10,12 +11,14 @@
     }
 
     &--list {
+        cursor: pointer;
         margin: 0;
         padding: 0;
         display: inline-block;
     }
 
     &--item {        
+        cursor: pointer;
         display: block;
         color: $color-light;        
         margin: 0;        

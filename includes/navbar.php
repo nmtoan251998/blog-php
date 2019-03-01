@@ -17,7 +17,7 @@
                 <a href="#" class="nav--item">Item 3</a>
             </li>            
             <li class="nav--list dropdown">
-                <a href="#" class="nav--item">Category</a>
+                <a class="nav--item">Category</a>
                     <ul class="dropdown--menu">
                         <?php
                             $sql = "SELECT * FROM categories LIMIT 2";
@@ -26,18 +26,20 @@
                             // if data exist in database
                             if($result->num_rows > 0) {
                                 while($row = $result->fetch_assoc()) {
-                                    $catData = ucwords($row['cat_data']);
+                                    $catData = $row['cat_data'];
+                                    $catDataDisplay = ucwords($catData);
+                                    $catId = $row['cat_id'];
 
                                     echo '                                                                                           
                                         <li class="dropdown--list">
-                                            <a href="#" class="dropdown--item">'.$catData.'</a>
+                                            <a href="category.php?cat_id='.$catId.'&cat_data='.$catData.'" class="dropdown--item">'.$catDataDisplay.'</a>
                                         </li>                                                                                                                                                           
                                     ';
                                 }
                             }                    
                         ?>
                         <li class="dropdown--list">
-                            <a href="categories.php" class="dropdown--item">More </a>
+                            <a href="category.php" class="dropdown--item">More </a>
                         </li>
                     </ul>
                 </li>
