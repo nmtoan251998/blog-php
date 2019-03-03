@@ -1,14 +1,14 @@
 <?php include "config.php"?>
 <html lang="en">
 <head>
-    <title>Navbar Layout</title>
+    <title>Navbar User Layout</title>
 </head>
 <body>
      <!-- [navbar]-->
      <nav class="nav">
         <ul class="nav--menu">                
             <li class="nav--list">
-                <a href="home.php" class="nav--item">Home</a>
+                <a href="index.php" class="nav--item">Home</a>
             </li>
             <li class="nav--list">
                 <a href="#" class="nav--item">Item 2</a>
