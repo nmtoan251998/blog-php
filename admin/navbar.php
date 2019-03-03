@@ -12,13 +12,13 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a href="#" class="nav-link text-white">Home</a>
+                    <a href="index.php" class="nav-link text-white">Home</a>
                 </li>
                 <li class="nav-item active">
-                    <a href="#" class="nav-link text-white">Post</a>
+                    <a href="post.php" class="nav-link text-white">Post</a>
                 </li>
                 <li class="nav-item active">
-                    <a href="#" class="nav-link text-white">Data</a>
+                    <a href="data.php" class="nav-link text-white">Data</a>
                 </li>                    
             </ul>
             <form action="" class="form-inline">
