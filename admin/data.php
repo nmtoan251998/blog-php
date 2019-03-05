@@ -65,7 +65,7 @@
                         $blogTitle = $row["blog_title"];
                         $blogContent = substr($row["blog_description"], 0, 500);
                         $blogAuthor = $row["blog_author"];
-                        $blogCategory = $row["blog_category"];
+                        $blogCategory = $row["blog_category"];                        
 
                         $catSql = "SELECT * FROM categories WHERE cat_id = $blogId";
                         $catResult = mysqli_query($connection, $catSql);                        
@@ -73,6 +73,8 @@
                         if($catResult->num_rows > 0) {
                             while($catRow = $catResult->fetch_assoc()) {
                                 $catData = ucwords($catRow["cat_data"]);
+                            }
+                        }
                                 echo '
                                     <tr>
                                         <th scope="row">'.$blogId.'</th>
@@ -86,7 +88,7 @@
 
                                                 <ul class="dropdown-menu">                                                    
                                                     <li><a class="dropdown-item" href="#edit_modal'.$blogId.'" data-toggle="modal">Edit</a></li>                                                    
-                                                    <li><a class="dropdown-item" href="index.php?del_id='.$blogId.'">Delete</a></li>
+                                                    <li><a class="dropdown-item" href="data.php?del_id='.$blogId.'">Delete</a></li>
                                                     <li><a class="dropdown-item" href="../post.php?blog_id='.$blogId.'">View</a></li>
                                                 </ul>
                                             </div>
@@ -137,8 +139,7 @@
                                                                 }
                                                             ?>
                                                             
-                                                        </select>
-                                                        <!-- <input type="text" id="category" class="form-control mb-3" placeholder="<?php echo $catData;?>"> -->
+                                                        </select>                                                        
                                                     </div>                                                
                                                     <input type="submit" name="edit_submit" class="btn btn-primary btn-block">
                                                 </form> 
@@ -148,9 +149,7 @@
                                     </div>
                                 </div>
 
-                            <?php
-                            }
-                        }                        
+                            <?php                                                                            
                     }
                 }
 
