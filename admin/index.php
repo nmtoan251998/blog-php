@@ -1,4 +1,4 @@
-<?php include "../includes/config.php" ?>
+<?php include "../config.php" ?>
 <?php 
     if(isset($_GET["del_id"])) {
         $del = $_GET["del_id"];        

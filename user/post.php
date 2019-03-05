@@ -1,4 +1,4 @@
-<?php include "includes/config.php" ?>
+<?php include "../config.php" ?>
 
 <!DOCTYPE html>
 <html lang="vi">
@@ -6,14 +6,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">    
 
-    <link rel="stylesheet" type="text/css" href="public/stylesheet/css/home.css">
+    <link rel="stylesheet" type="text/css" href="../public/stylesheet/css/home.css">
 
     <title>Home page</title>    
 </head>
 <body>
     <div class="container">
         <!-- [navbar]-->
-        <?php include "includes/navbar.php" ?>                          
+        <?php include "navbar.php" ?>                          
         <!-- [end navbar]-->  
 
         <!-- [main]-->
@@ -63,7 +63,7 @@
         <!-- end [main] -->  
         
         <!-- [sidebar]-->
-        <?php include "includes/sidebar.php" ?>                          
+        <?php include "sidebar.php" ?>                          
         <!-- [end sidebar]-->
     </div>    
 </body>

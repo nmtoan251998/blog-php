@@ -1,4 +1,4 @@
-<?php include "config.php"?>
+<?php include "../config.php"?>
 <html lang="en">
 <head>
     <title>Navbar User Layout</title>

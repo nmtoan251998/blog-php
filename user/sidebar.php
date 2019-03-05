@@ -1,3 +1,4 @@
+<?php include "../config.php"?>
 <html lang="en">
 <head>
     <title>Sidebar Layout</title>

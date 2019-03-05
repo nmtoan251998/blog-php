@@ -1,4 +1,4 @@
-<?php include "../includes/config.php" ?>
+<?php include "../config.php" ?>
 <?php
     if(isset($_POST["save"])) {
         /* Warning
@@ -14,9 +14,7 @@
         // $insertContent = $_POST["blog_description"];
         // $insertAuthor = $_POST["blog_author"];
         // $insertDate = $_POST["blog_date"];
-        // $insertCategory = $_POST["blog_category"];
-
-        
+        // $insertCategory = $_POST["blog_category"];        
         
         $insertSql = "INSERT INTO blog_data 
             VALUES ('".$_POST["blog_id"]."', '".$_POST["blog_title"]."', '".$_POST["blog_description"]."','".$_POST["blog_author"]."', '".$_POST["blog_date"]."', '".$_POST["blog_category"]."')";                        
