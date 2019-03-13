@@ -5,15 +5,12 @@
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-dark">
-        <a href="index.php" class="navbar-brand text-light">Admin Panel</a>                  
+        <a href="data.php" class="navbar-brand text-light">Admin Panel</a>                  
         <button class="navbar-toggler bg-light" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a href="index.php" class="nav-link text-white">Home</a>
-                </li>
+            <ul class="navbar-nav mr-auto">                
                 <li class="nav-item active">
                     <a href="post.php" class="nav-link text-white">Post</a>
                 </li>

@@ -9,13 +9,7 @@
         <ul class="nav--menu">                
             <li class="nav--list">
                 <a href="index.php" class="nav--item">Home</a>
-            </li>
-            <li class="nav--list">
-                <a href="#" class="nav--item">Item 2</a>
-            </li>
-            <li class="nav--list">
-                <a href="#" class="nav--item">Item 3</a>
-            </li>            
+            </li>              
             <li class="nav--list dropdown">
                 <a class="nav--item">Blog category</a>
                     <ul class="dropdown--menu">
